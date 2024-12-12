@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/Voice-Chat-Rooms/',
+  base: '/voice-chat-app/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
