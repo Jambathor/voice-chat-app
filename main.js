@@ -1,8 +1,7 @@
 import './style.css'
 import AgoraRTC from "agora-rtc-sdk-ng"
 import AgoraRTM from "agora-rtm-sdk"
-
-import appid from '../appId.js'
+import appid from './appId.js'
 
 
 const token = null
