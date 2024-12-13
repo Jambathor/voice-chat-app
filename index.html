@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voice Chat App</title>
-    <script type="module" crossorigin src="/voice-chat-app/assets/index-dc5a1f45.js"></script>
-    <link rel="stylesheet" href="/voice-chat-app/assets/index-9967cd4a.css">
+    <script type="module" crossorigin src="/voice-chat-app/assets/index-ee75bdee.js"></script>
+    <link rel="stylesheet" href="/voice-chat-app/assets/index-92652b01.css">
   </head>
   <body>
     <div id="container">
@@ -19,33 +19,34 @@
         </div>
     
         <form id="form">
-          <div>
-            <h3>Select An Avatar:</h3>
-          </div>
+          <h3>Select An Avatar:</h3>
           <div id="avatars">
-              <img class="avatar-selection" src="/voice-chat-app/assets/male-1-2f30369a.png"/>
-              <img class="avatar-selection" src="/voice-chat-app/assets/male-2-04b4a758.png"/>
-              <img class="avatar-selection" src="/voice-chat-app/assets/male-4-d3191b8c.png"/>
-              <img class="avatar-selection" src="/voice-chat-app/assets/male-5-e5f61696.png"/>
-              <img class="avatar-selection" src="/voice-chat-app/assets/female-1-72dad415.png"/>
-              <img class="avatar-selection" src="/voice-chat-app/assets/female-2-36ee8237.png"/>
-              <img class="avatar-selection" src="/voice-chat-app/assets/female-4-90c78926.png"/>
-              <img class="avatar-selection" src="/voice-chat-app/assets/female-5-827097cf.png"/>
+              <img class="avatar-selection" src="/voice-chat-app/assets/male-1-2f30369a.png" alt="Male Avatar 1"/>
+              <img class="avatar-selection" src="/voice-chat-app/assets/male-2-04b4a758.png" alt="Male Avatar 2"/>
+              <img class="avatar-selection" src="/voice-chat-app/assets/male-4-d3191b8c.png" alt="Male Avatar 3"/>
+              <img class="avatar-selection" src="/voice-chat-app/assets/male-5-e5f61696.png" alt="Male Avatar 4"/>
+              <img class="avatar-selection" src="/voice-chat-app/assets/female-1-72dad415.png" alt="Female Avatar 1"/>
+              <img class="avatar-selection" src="/voice-chat-app/assets/female-2-36ee8237.png" alt="Female Avatar 2"/>
+              <img class="avatar-selection" src="/voice-chat-app/assets/female-4-90c78926.png" alt="Female Avatar 3"/>
+              <img class="avatar-selection" src="/voice-chat-app/assets/female-5-827097cf.png" alt="Female Avatar 4"/>
           </div> 
 
           <div id="form-fields">
-              <label>Display Name:</label>
-              <input required name="displayname" type="text" placeholder="Enter username..."/>
-      
-              <label>Room Name:</label>
-              <input required name="roomname" type="text" placeholder="Enter room name..."/>
-      
+              <div>
+                <label>Display Name:</label>
+                <input required name="displayname" type="text" placeholder="Enter username..."/>
+              </div>
+              
+              <div>
+                <label>Room Name:</label>
+                <input required name="roomname" type="text" placeholder="Enter room name..."/>
+              </div>
+              
               <input type="submit" value="Enter Room"/>
           </div>
-      </form>
+        </form>
     
-        <div id="members">
-        </div>
+        <div id="members"></div>
     </div>
     
   </body>
