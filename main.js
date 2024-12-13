@@ -160,11 +160,11 @@ let getChannelMembers = async () => {
 
 const toggleMic = async (e) => {
   if (micMuted){
-    e.target.src = '/icons/mic.svg'
+    e.target.src = 'icons/mic.svg'
     e.target.style.backgroundColor = 'ivory'
     micMuted = false
   }else{
-    e.target.src = '/icons/mic-off.svg'
+    e.target.src = 'icons/mic-off.svg'
     e.target.style.backgroundColor = 'indianred'
     micMuted = true
   }
