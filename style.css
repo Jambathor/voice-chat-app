@@ -7,13 +7,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
-:root {
-  color-scheme: dark;
-}
-
 body {
   margin: 0;
-  background-color: #333333;
+  background-color: #424242;
   min-height: 100vh;
   color: white;
 }
@@ -27,9 +23,9 @@ body {
 #room-header {
   justify-content: space-between;
   align-items: center;
-  padding: 1em 0;
+  padding: 1em;
   display: none;
-  background-color: #444444;
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   margin-bottom: 1em;
 }
@@ -37,11 +33,10 @@ body {
 #room-header-controls {
   display: flex;
   gap: 10px;
-  padding: 0 1em;
 }
 
 .control-icon {
-  background-color: #666666;
+  background-color: indianred;
   border: none;
   padding: 0.5em;
   height: 24px;
@@ -53,7 +48,6 @@ body {
 
 .control-icon:hover {
   transform: scale(1.1);
-  background-color: #777777;
 }
 
 #members {
@@ -62,8 +56,9 @@ body {
   gap: 20px;
   justify-content: center;
   padding: 2em;
-  background-color: #444444;
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  min-height: 200px;
 }
 
 .speaker {
@@ -77,15 +72,12 @@ body {
 #form {
   max-width: 500px;
   margin: 2em auto;
-  background-color: #444444;
   padding: 2em;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 #form h3 {
   color: white;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   font-size: 1.2em;
   text-align: left;
 }
@@ -107,6 +99,7 @@ body {
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.3s ease;
+  background-color: transparent;
 }
 
 .avatar-selection:hover {
@@ -136,16 +129,17 @@ body {
 }
 
 #form label {
-  color: #CCCCCC;
+  color: white;
   font-size: 0.9em;
   margin-bottom: 0.3em;
+  display: inline-block;
 }
 
 #form input[type="text"] {
   width: 100%;
-  padding: 0.8em;
-  background-color: #333333;
-  border: 1px solid #555555;
+  padding: 0.8em 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   color: white;
   font-size: 1em;
@@ -153,15 +147,15 @@ body {
 
 #form input[type="text"]:focus {
   outline: none;
-  border-color: #666666;
-  background-color: #3a3a3a;
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 #form input[type="submit"] {
   width: 100%;
-  padding: 1em;
+  padding: 0.8em;
   margin-top: 1em;
-  background-color: #666666;
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
   border: none;
   border-radius: 4px;
@@ -171,11 +165,10 @@ body {
 }
 
 #form input[type="submit"]:hover {
-  background-color: #777777;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 #room-name {
-  padding: 0 1em;
   font-size: 1.5em;
   font-weight: 500;
 }

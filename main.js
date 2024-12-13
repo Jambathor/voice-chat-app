@@ -225,12 +225,10 @@ for (let i = 0; i < avatars.length; i++) {
     // Remove selected class from all avatars
     for (let j = 0; j < avatars.length; j++) {
       avatars[j].classList.remove('selected')
-      avatars[j].style.opacity = '0.5'
     }
 
     // Add selected class to clicked avatar
     avatar = avatars[i].src
     avatars[i].classList.add('selected')
-    avatars[i].style.opacity = '1'
   })
 }
