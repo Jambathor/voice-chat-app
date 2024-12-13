@@ -161,11 +161,11 @@ let getChannelMembers = async () => {
 const toggleMic = async (e) => {
   if (micMuted){
     e.target.src = 'icons/mic.svg'
-    e.target.style.backgroundColor = 'ivory'
+    e.target.style.backgroundColor = '#4CAF50'
     micMuted = false
   }else{
     e.target.src = 'icons/mic-off.svg'
-    e.target.style.backgroundColor = 'indianred'
+    e.target.style.backgroundColor = '#666666'
     micMuted = true
   }
   audioTracks.localAudioTrack.setMuted(micMuted)
