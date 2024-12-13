@@ -221,16 +221,17 @@ document.getElementById('mic-icon').addEventListener('click', toggleMic)
 
 const avatars = document.getElementsByClassName('avatar-selection')
 
-for (let i=0; avatars.length > i; i++){
-  
-  avatars[i].addEventListener('click', ()=> {
-    for (let i=0; avatars.length > i; i++){
-      avatars[i].style.borderColor = "#fff"
-      avatars[i].style.opacity = .5
+for (let i = 0; i < avatars.length; i++) {
+  avatars[i].addEventListener('click', () => {
+    // Remove selected class from all avatars
+    for (let j = 0; j < avatars.length; j++) {
+      avatars[j].classList.remove('selected')
+      avatars[j].style.opacity = '0.5'
     }
 
-      avatar = avatars[i].src
-      avatars[i].style.borderColor = "#00ff00"
-      avatars[i].style.opacity = 1
+    // Add selected class to clicked avatar
+    avatar = avatars[i].src
+    avatars[i].classList.add('selected')
+    avatars[i].style.opacity = '1'
   })
 }
